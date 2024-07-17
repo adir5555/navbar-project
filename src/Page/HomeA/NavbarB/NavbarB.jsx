@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
 import Reaff from '../../../assets/logoOne.webp';
-// import { MdAddShoppingCart } from "react-icons/md";
 import { FiAlignRight } from 'react-icons/fi';
-
+import './NavbarBb.css'
 
 const NavbarB = () => {
   const navlink = <>
 
-
+    
     <li> <Link to='/'>Home</Link></li>
     <li> <Link to='/'>Menu</Link></li>
     <li><Link to='/'>Serect</Link></li>
@@ -26,6 +25,7 @@ const NavbarB = () => {
     <div className="navbar mt-56
     border-b-4 border-indigo-500
      bg-sky-700 p-8">
+
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,15 +38,16 @@ const NavbarB = () => {
             {navlink}
           </ul>
         </div>
-        <img className='ml-36' src={Reaff} alt="" />
+        <img className='ml-36 ' src={Reaff} alt="" />
       </div>
-      <div className="navbar-center  hidden lg:flex">
-        <ul className="menu text-3xl menu-horizontal px-1">
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu text-3xl menu-horizontal">
 
 
           {navlink}
         </ul>
       </div>
+
     </div>
   );
 };
